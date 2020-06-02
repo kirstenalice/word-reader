@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Word Reader</title>
+    <style>
+        html {
+            background-color: yellow;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: blue;
+        }
+
+        #text-container{
+            display:flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: green;
+        }
+
+        #text-box {
+            height:400px;
+            width:600px;
+            font-size:48px;
+        }
+
+        h1 {
+            color: purple;
+            font-size: 60px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Word Reader</h1>
+    <main>
+        <form action="/speak" method="GET" id="speak-form" enctype="multipart/form-data">
+            <div id="form-container">
+                <div id="text-container">
+                    <input type="text" id="text-box" title="text" name="words" placeholder="Type what you want to say here!"/>
+                </div>
+                <div class="button-container">
+                    <button type="submit" id="submit-button">Speak!</button>
+                </div>
+                <div class="button-container">
+                    <button type="reset" id="clear-form">Clear Text</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>Made with ♡ by Kirsten Meidlinger</footer>
+</body>
+</html>

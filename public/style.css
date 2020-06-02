@@ -1,0 +1,13 @@
+html {
+    background-color: yellow;
+}
+
+h1 {
+    color: purple;
+}
+
+#form-container {
+    display:flex;
+    align-items: center;
+    background-color: blue;
+}
