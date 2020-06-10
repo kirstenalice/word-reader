@@ -12,6 +12,7 @@ app.get("/", async (req,res) => {
   } catch (err) {
      console.log(err); 
   }
+  
   res.sendFile("index.html", { root: "./public" });
 });
 
