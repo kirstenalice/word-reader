@@ -3,7 +3,11 @@ const say = require("say");
 const router = express.Router();
 
 router.get("/", async (req,res) => {
-    say.speak(req.query.words);
+    try{
+        say.speak(req.query.words);
+    } catch (err) {
+       console.log(err); 
+    }
     res.sendFile("index.html", { root: "./public" });
 });
 

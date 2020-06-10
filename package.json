@@ -8,14 +8,15 @@
     "start": "node app.js"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/kirstenalice/word-reader.git"
+    "type": "git",
+    "url": "https://github.com/kirstenalice/word-reader.git"
   },
   "author": "Kirsten Meidlinger",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
+    "festival": "^1.0.1",
     "heroku": "^7.42.1",
     "json": "^9.0.6",
     "multer": "^1.4.2",
