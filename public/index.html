@@ -23,7 +23,7 @@
             background-color: green;
         }
 
-        #text-box {
+        #words {
             height:400px;
             width:600px;
             font-size:48px;
@@ -41,17 +41,18 @@
         <form action="/" method="GET" id="speak-form" enctype="multipart/form-data">
             <div id="form-container">
                 <div id="text-container">
-                    <input type="text" id="text-box" title="text" name="words" placeholder="Type what you want to say here!"/>
+                    <input type="text" id="words" title="text" name="words" placeholder="Type what you want to say here!"/>
                 </div>
                 <div class="button-container">
                     <button type="submit" id="submit-button">Speak!</button>
                 </div>
                 <div class="button-container">
-                    <button type="reset" id="clear-form">Clear Text</button>
+                    <button type="reset" id="clear">Clear Text</button>
                 </div>
             </div>
         </form>
     </main>
     <footer>Made with ♡ by Kirsten Meidlinger</footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 </html>
