@@ -8,7 +8,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 configRoutes(app);
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("Speech Server");
-  console.log("Your routes will be running on http://localhost:3000");
 });
